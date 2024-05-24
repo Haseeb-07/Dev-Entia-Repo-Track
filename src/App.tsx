@@ -68,6 +68,24 @@ function App() {
           }
         />
         <Route
+          path='/dashboard'
+          element={
+            <>
+              <PageTitle title="Dashboard" />
+              <Dashboard />
+            </>
+          }
+        />
+        <Route
+          path='/reports'
+          element={
+            <>
+             <PageTitle title="Form Elements | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              <FormElements />
+            </>
+          }
+        />
+        <Route
           path="/finance"
           element={
             <>
