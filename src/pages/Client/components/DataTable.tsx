@@ -106,9 +106,9 @@ const data: TableRow[] = [
 const DataTable: React.FC = () => {
   return (
     <div className="p-4 overflow-x-auto">
-      <table className="min-w-full bg-lightBlue">
+      <table className="min-w-full dark:bg-lightBlue">
         <thead>
-          <tr className="w-full text-left bg-darkBlue text-white">
+          <tr className="w-full text-left dark:bg-darkBlue dark:text-white">
             <th className="p-2"><input type="checkbox" /></th>
             <th className="p-2">Tier ID</th>
             <th className="p-2">RDN</th>
@@ -125,7 +125,7 @@ const DataTable: React.FC = () => {
         </thead>
         <tbody>
           {data.map((row, index) => (
-            <tr key={index} className="text-white bg-myTable even:bg-myTable">
+            <tr key={index} className="dark:text-white bg-myTable even:bg-myTable">
               <td className="p-2"><RxCross1 /></td>
               <td className="p-2">{row.tierId}</td>
               <td className="p-2">{row.rdn}</td>
