@@ -21,7 +21,11 @@ import MyClients from './pages/Client/MyClients';
 import Repossessions from './pages/Repossessions/Repossessions';
 import Branches from './pages/Branches/Branches';
 import SignUp from '../src/Haseeb_Components/components/SignUp';
-import SignIn from '../src/Haseeb_Components/components/SignUp';
+import SignIn from '../src/Haseeb_Components/components/SignIn';
+//import ResetPassword from './Haseeb_Components/components/ResetPassword';
+//import PasswordChanged from './Haseeb_Components/components/PasswordChanged';
+//import ForgotPassword from './Haseeb_Components/components/ForgotPassword';
+//import EmailInstructions from './Haseeb_Components/components/EmailInstructions';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -46,7 +50,7 @@ function App() {
           path='/signup'
           element={
             <>
-             <SignUp/>
+             <SignUp />
             </>
           }
         />
